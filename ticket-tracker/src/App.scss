@@ -1,13 +1,19 @@
+@use "./components/Ticket/Ticket.scss" as *;
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Quicksand:wght@300&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap');
 
 * {
   font-family: Montserrat;
-
+}
+  
+.display {
+  display: flex;
 }
 
 .ticket__body {
+
   border-style: solid;
   width: 300px;
   margin: 30px;
@@ -27,9 +33,6 @@
   margin: 30px;
 }
 
-.display {
-  display: flex;
-}
 
 .counter__number {
   font-size: 60px;

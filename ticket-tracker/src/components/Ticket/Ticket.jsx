@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 
-const Ticket = ({employee, role}) => {
+const Ticket = ({employee, role, number}) => {
     
 
 
@@ -52,7 +52,7 @@ const Ticket = ({employee, role}) => {
 
         <h3 className="ticket__admit">ADMIT ONE</h3>
 
-        <p className="ticket__serial">123456789</p>
+        <p className="ticket__serial">{employee.number}</p>
 
         </div>
 
