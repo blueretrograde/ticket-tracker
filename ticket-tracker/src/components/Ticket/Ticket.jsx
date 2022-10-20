@@ -30,17 +30,30 @@ const Ticket = ({employee, role}) => {
         
         
         <div className = "ticket ticket__body">
-        <h3 className="ticket__name">{employee.name}</h3>
+        
+        <div className="ticket__info">
+
+        <h4 className="ticket__name">{employee.name}</h4>
         <h6 className="ticket__role">{employee.role}</h6>
+
+        </div>
 
 
         <div className="ticket__counter">
-        <h3>Counter</h3>
         
-        <button onClick={counterAdd} className="counter__plus">+</button>
-        <span className="counter__number">{counter}</span>
         <button onClick={counterSubtract} className="counter__minus">-</button>
-            
+        <span className="counter__number">{counter}</span>
+
+        <button onClick={counterAdd} className="counter__plus">+</button>
+        </div>
+
+
+        <div className="admit__border">
+
+        <h3 className="ticket__admit">ADMIT ONE</h3>
+
+        <p className="ticket__serial">123456789</p>
+
         </div>
 
         </div>
